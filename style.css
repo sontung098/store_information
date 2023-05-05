@@ -1,0 +1,62 @@
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 70%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #6759ff;
+}
+#search-container button {
+  margin-left: 10px;
+}
+.button-value {
+  border: 1px solid #1a4995;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.active {
+  background-color: #1a4995;
+  color: #ffffff;
+}
+#stores {
+  display: grid;
+}
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 10px;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #stores {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
